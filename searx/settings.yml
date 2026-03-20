@@ -72,7 +72,17 @@ search:
   # remove format to deny access, use lower case.
   # formats: [html, csv, json, rss]
   formats:
-    - html
+  - html
+  - json
+```
+
+**Step 5** — Click **Commit changes** green button
+
+**Step 6** — Go to Railway → your SearXNG service → **Deployments** tab → click **Redeploy**
+
+**Step 7** — Wait 2 minutes then test:
+```
+https://searxng-production-f09a.up.railway.app/search?q=bitcoin&format=json
 
 server:
   # Is overwritten by ${SEARXNG_PORT} and ${SEARXNG_BIND_ADDRESS}
